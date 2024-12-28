@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adem Tiss - Graphic Design Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #002b5c;
+            color: #FFD700;  /* Updated gold color */
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #001f3f;
+            color: #FFD700;  /* Updated gold color */
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            animation: slide 5s infinite alternate;
+            pointer-events: none;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: fadeInDown 2s ease;
+        }
+
+        header p {
+            margin: 1rem 0 0;
+            animation: fadeInUp 2s ease;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+            border: 1px solid #FFD700;  /* Updated gold color */
+            border-radius: 10px;
+            overflow: hidden;
+            background: #001f3f;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        .project h2 {
+            background-color: #002b5c;
+            color: #FFD700;  /* Updated gold color */
+            margin: 0;
+            padding: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .project-content img {
+            border-radius: 6px;
+            border: 2px solid #FFD700;  /* Updated gold color */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 215, 0, 0.4);
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 10;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .overlay img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #001f3f;
+            color: #FFD700;  /* Updated gold color */
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <header>
+            <h1>Adem Tiss</h1>
+            <p>Designer Graphique</p>
+        </header>
+    
+        <div class="container">
+            <div class="intro">
+                <p>Salut, je suis Adem Tiss, un designer graphique passionné et dévoué, spécialisé dans le branding, la création de contenu pour les réseaux sociaux et la narration visuelle. Mon portfolio présente une gamme de projets créatifs, reflétant ma capacité à donner vie à des idées à travers des designs percutants. Réalisons votre vision!</p>
+            </div>
+    
+            <!-- Projet 1 -->
+            <div class="project">
+                <h2>Projet 1 : Identité de Marque</h2>
+                <div class="project-content">
+    
+                    <!-- Images ajustées -->
+                    <img src="project 1/SOS (5).png" alt="Logo" width="200" height="200">
+                    <img src="project 1/www.reallygreatsite.com.png" alt="Carte de Visite" width="350" height="200">
+                    <img src="project 1/post.png" alt="Publication sur les Réseaux Sociaux" width="350" height="310">
+                    <img src="project 1/fb047916-e81e-4bc9-88df-53aceac9db03.jpg" alt="Bannière" width="300" height="115">
+                </div>
+            </div>
+    
+            <!-- Projet 2 -->
+            <div class="project">
+                <h2>Projet 2 : Branding pour Salle de Sport</h2>
+                <div class="project-content">
+    
+                    <!-- Images ajustées -->
+                    <img src="project 2/Haltère ROCK.jpg" alt="Post Salle de Sport 1" width="400" height="400">
+                    <img src="project 2/HALTére ROCK.png" alt="Post Salle de Sport 2" width="400" height="400">
+                </div>
+            </div>
+    
+            <!-- Projet 3 -->
+            <div class="project">
+                <h2>Projet 3 : Marque de Désodorisant</h2>
+                <div class="project-content">
+      
+                    <!-- Images ajustées -->
+                    <img src="project 3/1.png" alt="Post Désodorisant 1" width="500" height="700">
+                    <img src="project 3/3.png" alt="Post Désodorisant 2" width="500" height="700">
+                    <img src="project 3/4.png" alt="Post Désodorisant 3" width="500" height="700">
+                </div>
+            </div>
+    
+            <!-- Projet 4 -->
+            <div class="project">
+                <h2>Projet 4 : Branding pour Restaurant</h2>
+                <div class="project-content">
+                    <!-- Images ajustées -->
+                    <img src="project 4/logo.png" alt="Logo du Restaurant" width="200" height="200">
+                    <img src="project 4/post.png" width="350" height="310">
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <p>&copy; 2024 Adem Tiss - Portfolio de Design Graphique</p>
+        </footer>
+
+    <!-- Overlay for enlarged image -->
+    <div class="overlay" id="overlay">
+        <img src="" alt="Enlarged Image" id="overlayImg">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projects = document.querySelectorAll('.project');
+            const overlay = document.getElementById('overlay');
+            const overlayImg = document.getElementById('overlayImg');
+
+            projects.forEach((project, index) => {
+                project.style.opacity = '0';
+                project.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    project.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    project.style.opacity = '1';
+                    project.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+
+            // Add click event to images for enlarging them
+            const images = document.querySelectorAll('.project-content img');
+            images.forEach(image => {
+                image.addEventListener('click', () => {
+                    overlay.style.display = 'flex';
+                    setTimeout(() => {
+                        overlay.style.opacity = 1; // Fade-in effect
+                    }, 50);
+                    overlayImg.src = image.src;
+                });
+            });
+
+            // Close the overlay when clicked outside the image
+            overlay.addEventListener('click', () => {
+                overlay.style.opacity = 0; // Fade-out effect
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 400); // Match the transition time
+            });
+        });
+        document.addEventListener('keydown', function (e) {
+    if (e.key === 'F12' || (e.ctrlKey && (e.key === 'I' || e.key === 'U'))) {
+        e.preventDefault();
+    }
+});
+    document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+    </script>
+</body>
+</html>
